@@ -74,7 +74,7 @@ Chef was initially paying $10$ rupees. After Chefina moves in, he needs to pay $
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-02T17:09:44.849Z  
+**Submitted:** 2026-09-02T17:11:47.143Z  
 
 ```c_cpp
 #include <stdio.h>
