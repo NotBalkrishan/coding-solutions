@@ -58,27 +58,24 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-04T16:11:01.051Z  
+**Submitted:** 2026-09-04T16:21:12.757Z  
 
 ```c_cpp
-#include <stdio.h>
-
-int main() {
-	int t,n,m;
-	scanf("%d", &t);
-
-	while(t--)
-	{
-	    scanf("%d%d", &n, &m);
-	    if((n-m)<0)
-	    printf("0\n");
-	    else
-	    printf("%d\n", (n-m));
-	}
-
+# include <stdio.h>
+int main()
+{
+    int t,n,m,x;
+    scanf("%d", &t);
+    while (t--)
+    {
+        scanf("%d%d", &n, &m);
+        x=n-m;
+        if(x<0)
+        printf("0\n");
+        else
+        printf("%d \n", x);
+    }
 }
-
-
 ```
 
 ---
