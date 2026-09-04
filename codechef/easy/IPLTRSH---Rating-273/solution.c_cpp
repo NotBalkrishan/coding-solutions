@@ -1,17 +1,15 @@
-#include <stdio.h>
-
-int main() {
-	int t,n,m;
-	scanf("%d", &t);
-
-	while(t--)
-	{
-	    scanf("%d%d", &n, &m);
-	    if((n-m)<0)
-	    printf("0\n");
-	    else
-	    printf("%d\n", (n-m));
-	}
-
+# include <stdio.h>
+int main()
+{
+    int t,n,m,x;
+    scanf("%d", &t);
+    while (t--)
+    {
+        scanf("%d%d", &n, &m);
+        x=n-m;
+        if(x<0)
+        printf("0\n");
+        else
+        printf("%d \n", x);
+    }
 }
-
