@@ -49,17 +49,23 @@ A
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-05T17:13:27.523Z  
+**Submitted:** 2026-09-05T17:15:41.889Z  
 
 ```c_cpp
 #include <stdio.h>
 
 int main() {
 	// your code goes here
-	int n,m,x,y;
-	scanf("%d%d", &n, &m);
-	scanf("%d%d", &x, &y);
-	printf("%d", (n*x)+(m*y));
+	int t,x,y;
+	scanf("%d", &t);
+	while (t--)
+	{
+	    scanf ("%d%d", &x, &y);
+	    if (x>y)
+	    printf("A\n");
+	    else
+	    printf("B\n");
+	}
 
 }
 
