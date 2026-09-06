@@ -1,0 +1,86 @@
+# PAR2 - Rating 295
+
+![Difficulty](https://img.shields.io/badge/Difficulty-Easy-green)
+
+## Problem
+
+### Parity
+
+Ashu and Arvind participated in a coding contest, as a result of which they received $N$ chocolates. Now they want to divide the chocolates between them  **equally**.
+
+Can you help them by deciding if it is possible for them to divide all the $N$ chocolates in such a way that they each get an  **equal number**  of chocolates?
+
+ **You cannot break a chocolate in two or more pieces**.
+
+### Input Format
+- The first line of input will contain a single integer $T$, denoting the number of test cases.
+- The first and only line of each test case contains a single integer $N$ — the number of chocolates they received.
+### Output Format
+
+For each test case output the answer on a new line — "Yes" (without quotes) if they can divide chocolates between them equally, and "No" (without quotes) otherwise.
+
+Each letter of the output may be printed in either uppercase or lowercase, i.e, "Yes", "YES", and "yEs" will all be treated as equivalent.
+
+### Constraints
+- $1 \leq T \leq 10$
+- $1 \leq N \leq 10$
+### Sample 1:
+Input
+Output
+
+```
+4
+10
+4
+3
+2
+
+```
+
+```
+Yes
+Yes
+No
+Yes
+```
+
+### Explanation:
+
+ **Test case $1$:**  They can divide $10$ chocolates such that both of them get $5$ chocolates each.
+
+ **Test case $2$:**  They can divide $4$ chocolates such that both of them get $2$ chocolates each.
+
+ **Test case $3$:**  There is no way to divide $3$ chocolates so that they get equal number of chocolates.
+
+ **Test case $4$:**  They can divide $2$ chocolates such that both of them get $1$ chocolate each.
+
+## Solution
+
+**Language:** c_cpp  
+**Runtime:** N/A  
+**Memory:** N/A  
+**Submitted:** 2026-09-06T15:54:13.139Z  
+
+```c_cpp
+#include <stdio.h>
+
+int main()
+{
+	// your code goes here
+	int t,n;
+	scanf("%d", &t);
+	while(t--)
+	{
+	    scanf("%d", &n);
+	    (n%2==0)?printf("yes \n"):printf("No\n");
+	    
+	}
+
+}
+
+
+```
+
+---
+
+[View on CodeChef](https://www.codechef.com/problems/PAR2)
