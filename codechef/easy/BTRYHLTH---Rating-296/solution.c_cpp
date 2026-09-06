@@ -2,13 +2,12 @@
 
 int main() {
 	// your code goes here
-	int t,n,m;
+	int t,x;
 	scanf("%d", &t);
-	while (t--)
+	while(t--)
 	{
-	    scanf("%d%d", &n, &m);
-	    printf("%d \n", n*m);
+	    scanf("%d", &x);
+	    (x>=80)?printf("Yes \n"):printf("No\n");
 	}
-
 }
 
