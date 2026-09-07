@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+	// your code goes here
+	int n,x,y,z;
+	scanf("%d",&n);
+	while(n--)
+	{
+	    scanf("%d%d%d", &x,&y,&z);
+	    if((x<y && x>z)||(x>y && x<z))
+	    {
+	        printf("%d\n", x);
+	    }
+	    else if((y>x && y<z)||(y<x && y>z))
+	    {
+	        printf("%d\n",y);
+	    }
+	    else 
+	    printf("%d\n",z);
+	    
+	}
+}
+
