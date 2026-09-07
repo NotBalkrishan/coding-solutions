@@ -51,27 +51,23 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-07T02:48:13.159Z  
+**Submitted:** 2026-09-07T14:03:10.913Z  
 
 ```c_cpp
 #include <stdio.h>
-
-int main() {
-	// your code goes here
-	int t,x,y;
-	scanf("%d", &t);
-	while(t--)
-	{
-	    scanf("%d%d", &x, &y);
-	    if(x>=y)
-	    printf("%d\n", x-y);
-	    else
-	    printf("0");
-	}
-
+int main()
+{
+    int t,x,y;
+    scanf("%d", &t);
+    while(t--)
+    {
+        scanf("%d%d", &x,&y);
+        if(x>=y)
+        printf("%d\n", x-y);
+        else
+        printf("0\n");
+    }
 }
-
-
 ```
 
 ---
