@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+	// your code goes here
+	int t,x;
+	scanf("%d", &t);
+	while(t--)
+	{
+	    scanf("%d",&x);
+	    if(x<3)
+	    printf("Light\n");
+	    else if(x>=3 && x<7)
+	    printf("Moderate\n");
+	    else
+	    printf("Heavy\n");
+	}
+
+}
+
