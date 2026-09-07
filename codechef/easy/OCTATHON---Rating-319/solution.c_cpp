@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+	// your code goes here
+	int x;
+	scanf("%d", &x);
+	if(x<3)
+	printf("Gold\n");
+	else if(x>=3 && x<6)
+	printf("Silver\n");
+	else
+	printf("Bronze\n");
+
+}
+
