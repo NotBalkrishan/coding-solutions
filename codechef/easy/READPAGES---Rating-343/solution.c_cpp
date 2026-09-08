@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+	// your code goes here
+	int t,n,x,y;
+	scanf("%d", &t);
+	while(t--)
+	{
+	    scanf("%d%d%d",&n,&x,&y);
+	    (x*y>=n)?printf("Yes\n"):printf("No\n");
+	}
+}
+
