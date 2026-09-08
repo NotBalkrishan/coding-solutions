@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+	// your code goes here
+	int t,n,k;
+	scanf("%d",&t);
+	while(t--)
+	{
+	    
+	    scanf("%d%d", &n,&k);
+	    (n<k)?printf("Yes\n"):printf("no\n");
+	}
+
+}
+
