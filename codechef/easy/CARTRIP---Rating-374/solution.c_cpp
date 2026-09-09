@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+	// your code goes here
+	int t,x;
+	scanf("%d", &t);
+	for(int i=1;i<=t;i++)
+	{
+	    scanf("%d", &x);
+	    if(x<=300)
+	    printf("%d\n", 300*10);
+	    else
+	    printf("%d\n", x*10);
+	}
+
+}
+
