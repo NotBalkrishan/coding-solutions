@@ -1,14 +1,16 @@
 #include <stdio.h>
-
-int main() {
-	// your code goes here
-	int t,x;
-	scanf("%d", &t);
-	while(t--)
-	{
-	    scanf("%d", &x);
-	    printf("%d\n", x%10);
-	}
-
+int main()
+{
+    int t,x;
+    scanf("%d", &t);
+    while(t--)
+    {
+        scanf("%d",&x);
+        if(x<4)
+        printf("Mild \n");
+        else if(x>=4 && x<7)
+        printf("Medium \n");
+        else
+        printf("Hot \n");
+    }
 }
-
