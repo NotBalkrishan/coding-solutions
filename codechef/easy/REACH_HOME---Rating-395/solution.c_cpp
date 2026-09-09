@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+	// your code goes here
+	int t,x,y;
+	scanf("%d",&t);
+	while(t--)
+	{
+	    scanf("%d%d", &x,&y);
+	    if((x*5)>=y)
+	    printf("Yes\n");
+	    else
+	    printf("No\n");
+	}
+
+}
+
