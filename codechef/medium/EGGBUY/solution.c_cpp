@@ -5,7 +5,7 @@ int main() {
 	int x,y,f;
 	scanf("%d%d%d",&x,&y,&f);
 	int a=12*x;
-	int b=(12*y)+(2*f);
+	int b=(12*y)+(f);
 	if(a>=b)
 	printf("%d", b);
 	else
