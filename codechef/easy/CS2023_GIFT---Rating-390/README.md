@@ -61,7 +61,7 @@ Even if Om uses the whole Gymkhana fund, he won't be able to buy the laptop.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-09T16:43:31.992Z  
+**Submitted:** 2026-09-09T16:43:46.984Z  
 
 ```c_cpp
 #include <stdio.h>
