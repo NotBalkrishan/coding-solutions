@@ -61,7 +61,7 @@ Even if Om uses the whole Gymkhana fund, he won't be able to buy the laptop.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-09T16:43:46.984Z  
+**Submitted:** 2026-09-09T16:44:22.628Z  
 
 ```c_cpp
 #include <stdio.h>
@@ -70,7 +70,7 @@ int main() {
 	// your code goes here
 	int x,n,m;
 	scanf("%d%d%d", &x,&n,&m);
-	int z=z+m;
+	int z=x+m;
 	if(z>=n)
 	printf("Yes\n");
 	else
