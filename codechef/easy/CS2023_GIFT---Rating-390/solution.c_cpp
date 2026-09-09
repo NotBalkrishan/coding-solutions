@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+	// your code goes here
+	int x,n,m;
+	scanf("%d%d%d", &x,&n,&m);
+	int z=z+m;
+	if(z>=n)
+	printf("Yes\n");
+	else
+	printf("No");
+
+}
+
