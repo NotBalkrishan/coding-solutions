@@ -4,7 +4,7 @@ int main() {
 	// your code goes here
 	int x,n,m;
 	scanf("%d%d%d", &x,&n,&m);
-	int z=z+m;
+	int z=x+m;
 	if(z>=n)
 	printf("Yes\n");
 	else
