@@ -68,7 +68,7 @@ It's better to buy from the second shop, spending $53$ coins.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-09T14:40:31.121Z  
+**Submitted:** 2026-09-09T14:40:50.719Z  
 
 ```c_cpp
 #include <stdio.h>
@@ -78,7 +78,7 @@ int main() {
 	int x,y,f;
 	scanf("%d%d%d",&x,&y,&f);
 	int a=12*x;
-	int b=(12*y)+(2*f);
+	int b=(12*y)+(f);
 	if(a>=b)
 	printf("%d", b);
 	else
