@@ -7,7 +7,7 @@ int main() {
 	for(int i=1;i<=t;i++)
 	{
 	    scanf("%d%d", &x,&y);
-	    if(x>=(y+10))
+	    if(x>(y*10))
 	    printf("Yes\n");
 	    else
 	    printf("No\n");
