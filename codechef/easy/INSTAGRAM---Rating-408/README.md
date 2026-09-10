@@ -58,7 +58,7 @@ YES
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-10T16:49:16.817Z  
+**Submitted:** 2026-09-10T16:50:13.563Z  
 
 ```c_cpp
 #include <stdio.h>
@@ -70,7 +70,7 @@ int main() {
 	for(int i=1;i<=t;i++)
 	{
 	    scanf("%d%d", &x,&y);
-	    if(x>=(y+10))
+	    if(x>(y*10))
 	    printf("Yes\n");
 	    else
 	    printf("No\n");
