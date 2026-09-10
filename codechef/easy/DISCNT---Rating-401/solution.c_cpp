@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+	// your code goes here
+	int t,x;
+	scanf("%d",&t);
+	while(t--)
+	{
+	    scanf("%d",&x);
+	    int z=100-x;
+	    printf("%d\n",z);
+	}
+
+}
+
