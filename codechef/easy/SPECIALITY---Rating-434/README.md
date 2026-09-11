@@ -1,0 +1,91 @@
+# SPECIALITY - Rating 434
+
+![Difficulty](https://img.shields.io/badge/Difficulty-Easy-green)
+
+## Problem
+
+### Speciality
+
+On every CodeChef user's profile page, the list of problems that they have set, tested, and written editorials for, is listed at the bottom.
+
+Given the number of problems in each of these $3$ categories as $X, Y,$ and $Z$ respectively (where all three integers are  **distinct**), find if the user has been most active as a `Setter`, `Tester`, or `Editorialist`.
+
+### Input Format
+- The first line of input will contain a single integer $T$, denoting the number of test cases.
+- Each test case consists of three space-separated integers $X, Y,$ and $Z$ - the number of problems they have set, tested, and written editorials for.
+### Output Format
+
+For each test case, output in a new line:
+
+- Setter, if the user has been most active as a setter.
+- Tester, if the user has been most active as a tester.
+- Editorialist, if the user has been most active as an editorialist.
+
+Note that the output is case-insensitive. Thus, the strings `SETTER`, `setter`, `seTTer`, and `Setter` are all considered the same.
+
+### Constraints
+- $1 \leq T \leq 10^4$
+- $1 \leq X, Y, Z \leq 100$, where $X, Y,$ and $Z$ are distinct.
+### Sample 1:
+Input
+Output
+
+```
+4
+5 3 2
+1 2 4
+2 5 1
+9 4 5
+
+```
+
+```
+Setter
+Editorialist
+Tester
+Setter
+```
+
+### Explanation:
+
+ **Test case $1$:**  The number of problems that the user has set is greater than the number of problems tested or written editorials for. Thus, the user is most active as setter.
+
+ **Test case $2$:**  The number of problems that the user has written editorials for, is greater than the number of problems set or tested. Thus, the user is most active as editorialist.
+
+ **Test case $3$:**  The number of problems that the user has tested is greater than the number of problems set or written editorials for. Thus, the user is most active as tester.
+
+ **Test case $4$:**  The number of problems that the user has set is greater than the number of problems tested or written editorials for. Thus, the user is most active as setter.
+
+## Solution
+
+**Language:** c_cpp  
+**Runtime:** N/A  
+**Memory:** N/A  
+**Submitted:** 2026-09-11T10:13:20.652Z  
+
+```c_cpp
+#include <stdio.h>
+
+int main() {
+	// your code goes here
+	int t,x,y,z;
+	scanf("%d",&t);
+	for(int i=1;i<=t;i++)
+	{
+	    scanf("%d%d%d",&x,&y,&z);
+	    if(x>y&&x>z)
+	    printf("Setter\n");
+	    else if(y>x&&y>z)
+	    printf("tester\n");
+	    else
+	    printf("Editorialist\n");
+	}
+
+}
+
+
+```
+
+---
+
+[View on CodeChef](https://www.codechef.com/problems/SPECIALITY)
