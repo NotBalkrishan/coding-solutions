@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+	// your code goes here
+	int t,c;
+	scanf("%d",&t);
+	while(t--)
+	{
+	    scanf("%d",&c);
+	    if(c>20)
+	    printf("Hot\n");
+	    else
+	    printf("Cold\n");
+	}
+
+}
+
