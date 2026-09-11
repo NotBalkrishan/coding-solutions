@@ -2,12 +2,17 @@
 
 int main() {
 	// your code goes here
-	int t,k,x;
+	int t,x,n;
 	scanf("%d",&t);
+
 	while(t--)
 	{
-	    scanf("%d%d",&k,&x);
-	    printf("%d\n",k-x);
+	    scanf("%d%d",&n,&x);
+	    int y=n-x;
+	    if(x>=y)
+	    printf("Yes\n");
+	    else
+	    printf("No\n");
 	}
 
 }
