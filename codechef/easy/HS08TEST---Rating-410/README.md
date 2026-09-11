@@ -77,7 +77,7 @@ Example - Insufficient Funds
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-11T03:34:06.361Z  
+**Submitted:** 2026-09-11T03:35:31.731Z  
 
 ```c_cpp
 #include <stdio.h>
@@ -88,7 +88,7 @@ int main() {
 	float y;
 	scanf("%d%f",&x,&y);
 	float z=y-x-0.50;
-	if(y>=x)
+	if((y+0.50)>=x)
 	{
 	if(x%5==0)
 	printf("%.2f", z);
