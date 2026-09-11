@@ -58,7 +58,7 @@ Any
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-11T14:09:51.443Z  
+**Submitted:** 2026-09-11T14:10:16.898Z  
 
 ```c_cpp
 #include <stdio.h>
@@ -66,7 +66,7 @@ int main()
 {
     int t,a,b,c,d;
     scanf("%d",&t);
-    while(t>0)
+    while(t--)
     {
         scanf("%d %d %d %d",&a,&b,&c,&d);
         int q=a-c;
@@ -77,7 +77,7 @@ int main()
         printf("Any\n");
         else
         printf("Second\n");
-        t--;
+        
     }
     return 0;
 }
