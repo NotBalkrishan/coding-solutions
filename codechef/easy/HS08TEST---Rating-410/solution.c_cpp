@@ -6,7 +6,7 @@ int main() {
 	float y;
 	scanf("%d%f",&x,&y);
 	float z=y-x-0.50;
-	if(y>=x)
+	if((y+0.50)>=x)
 	{
 	if(x%5==0)
 	printf("%.2f", z);
