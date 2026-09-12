@@ -1,0 +1,89 @@
+# AIRLINES - Rating 475
+
+![Difficulty](https://img.shields.io/badge/Difficulty-Easy-green)
+
+## Problem
+
+### Codechef Airlines
+
+Chef has opened a new airline. Chef has $10$ airplanes where each airplane has a capacity of $X$ passengers.
+On the first day itself, $Y$ people are willing to book a seat in  **any one**  of Chef's airplanes.
+
+Given that Chef charges $Z$ rupees for each ticket, find the  **maximum**  amount he can earn on the first day.
+
+### Input Format
+- The first line of input will contain a single integer $T$, denoting the number of test cases.
+- Each test case consists of three space-separated integers $X, Y,$ and $Z$ — the capacity of each airplane, the number of people willing to book a seat in any one of Chef's airplanes on the first day, and the cost of each seat respectively.
+### Output Format
+
+For each test case, output on a new line, the  **maximum**  amount Chef can earn on the first day.
+
+### Constraints
+- $1 \leq T \leq 1000$
+- $1 \leq X, Y, Z \leq 100$
+### Sample 1:
+Input
+Output
+
+```
+4
+2 15 10
+1 10 1
+5 60 100
+1 11 7
+
+```
+
+```
+150
+10
+5000
+70
+
+```
+
+### Explanation:
+
+ **Test case $1$:**  Chef has $10$ airplanes and each airplane has a capacity of $2$ passengers. Thus, there are $20$ seats available in total.
+There are $15$ people who want to book a seat. Since we have enough seats for everyone, all $15$ people can book their seats and pay $10$ rupees each. The total money Chef earns is $15\cdot 10 = 150$.
+
+ **Test case $2$:**  Chef has $10$ airplanes and each airplane has a capacity of $1$ passenger. Thus, there are $10$ seats available in total.
+There are $10$ people who want to book a seat. Since we have enough seats for everyone, all $10$ people can book their seats and pay $1$ rupee each. The total money Chef earns is $10\cdot 1 = 10$.
+
+ **Test case $3$:**  Chef has $10$ airplanes and each airplane has a capacity of $5$ passengers. Thus, there are $50$ seats available in total.
+There are $60$ people who want to book a seat. Since we have only $50$ seats, only $50$ people can book their seats and pay $100$ rupees each. The total money Chef earns is $50\cdot 100 = 5000$.
+
+ **Test case $4$:**  Chef has $10$ airplanes and each airplane has a capacity of $1$ passenger. Thus, there are $10$ seats available in total.
+There are $11$ people who want to book a seat. Since we have only $10$ seats, only $10$ people can book their seats and pay $7$ rupees each. The total money Chef earns is $10\cdot 7 = 70$.
+
+## Solution
+
+**Language:** c_cpp  
+**Runtime:** N/A  
+**Memory:** N/A  
+**Submitted:** 2026-09-12T09:08:12.566Z  
+
+```c_cpp
+#include <stdio.h>
+
+int main() {
+	// your code goes here
+	int t,n,m,k;
+	scanf("%d",&t);
+	while(t--)
+	{
+	    scanf("%d%d%d",&n,&m,&k);
+	    if(n*10>=m)
+	    printf("%d\n",m*k);
+	    else
+	    printf("%d\n",n*k*10);
+	}
+
+}
+
+
+```
+
+---
+
+[View on CodeChef](https://www.codechef.com/problems/AIRLINES)
