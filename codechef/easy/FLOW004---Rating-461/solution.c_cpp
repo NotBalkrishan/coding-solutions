@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+	// your code goes here
+	int t,n;
+	scanf("%d",&t);
+	int sum=0;
+	while(t>0)
+	{
+	    scanf("%d",&n);
+	    int y=n%10;
+	   while(n>=10)
+	   {
+	       n=n/10;
+	   }
+	   int z=n;
+	   printf("%d\n", y+z);
+	   t--;
+	}
+	   
+	    
+	
+
+}
+
