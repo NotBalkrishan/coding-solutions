@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+	// your code goes here
+	int a,b,c,d;
+	scanf("%d%d%d%d", &a,&b,&c,&d);
+	int ans=0;
+	if(a>=10)
+	ans++;
+	if(b>=10)
+	ans++;
+	if(c>=10)
+	ans++;
+	if(d>=10)
+	ans++;
+	printf("%d",ans);
+	
+
+}
+
