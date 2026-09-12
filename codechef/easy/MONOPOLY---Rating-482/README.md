@@ -4,72 +4,78 @@
 
 ## Problem
 
-### The Mango Truck
+### Monopoly in Chefland
 
-You are given that a mango weighs $X$ kilograms and a truck weighs $Y$ kilograms. You want to cross a bridge that can withstand a weight of $Z$ kilograms.
+Chef is the financial incharge of Chefland and one of his duties is identifying if any company has gained a monopolistic advantage in the market.
 
-Find the  **maximum**  number of mangoes you can load in the truck so that you can cross the bridge safely.
+There are exactly $3$ companies in the market each of whose revenues are denoted by $R_1$, $R_2$ and $R_3$ respectively. A company is said to have a monopolistic advantage if its revenue is  **strictly**  greater than the sum of the revenues of its competitors.
+
+Given the revenue of the $3$ companies, help Chef determine if any of them has a monopolistic advantage.
 
 ### Input Format
-- First line will contain $T$, the number of test cases. Then the test cases follow.
-- Each test case consists of a single line of input, three integers $X, Y, Z$ - the weight of mango, the weight of truck and the weight the bridge can withstand respectively.
+- The first line of input will contain a single integer $T$, denoting the number of test cases.
+- Each test case consists of a single line of input containing three space separated integers $R_1$, $R_2$ and $R_3$ denoting the revenue of the three companies respectively.
 ### Output Format
 
-For each test case, output in a single line the  **maximum**  number of mangoes that you can load in the truck.
+For each test case, output $\texttt{YES}$ if any of the companies has a monopolistic advantage over its competitors, else output $\texttt{NO}$.
+
+You may print each character of the string in uppercase or lowercase (for example, the strings $\texttt{YeS}$, $\texttt{yEs}$, $\texttt{yes}$ and $\texttt{YES}$ will all be treated as identical).
 
 ### Constraints
 - $1 \leq T \leq 1000$
-- $1 \leq X \leq Y \leq Z \leq 100$
+- $1 \leq R_1, R_2, R_3 \leq 10$
 ### Sample 1:
 Input
 Output
 
 ```
 4
-2 5 11
-4 10 20
 1 1 1
-6 40 90
+1 2 4
+2 10 3
+1 2 3
 
 ```
 
 ```
-3
-2
-0
-8
+No
+Yes
+Yes
+No
 
 ```
 
 ### Explanation:
 
- **Test case $1$:**  You can load $3$ mangoes at maximum. The total weight is $3\times 2+5 = 11 \leq 11$. Thus, the truck can safely cross the bridge with $3$ mangoes. If you load $4$ mangoes, the total weight is $4\times 2+5 = 13 \gt 11$.
+ **Test case 1:**  All the companies have equal revenue so none have a monopolistic advantage.
 
- **Test case $2$:**  You can load $2$ mangoes at maximum. The total weight is $2\times 4+10 = 18 \leq 20$. Thus, the truck can safely cross the bridge with $2$ mangoes.
+ **Test case 2:**  The third company has a monopolistic advantage as $1 + 2 < 4$.
 
- **Test case $3$:**  You can load $0$ mangoes at maximum. The total weight is $0\times 1+1 = 1 \leq 1$. Thus, the truck can safely cross the bridge only if there are $0$ mangoes.
-
- **Test case $4$:**  You can load $8$ mangoes at maximum. The total weight is $6\times 8+40 = 88 \leq 90$. Thus, the truck can safely cross the bridge with $8$ mangoes.
+ **Test case 3:**  The second company has a monopolistic advantage as $2 + 3 < 10$.
 
 ## Solution
 
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-12T11:51:16.069Z  
+**Submitted:** 2026-09-12T11:54:04.554Z  
 
 ```c_cpp
 #include <stdio.h>
 
 int main() {
-    int t,x,y,z;
-    scanf("%d",&t);
-    while(t--)
-    {
-        scanf("%d%d%d",&x,&y,&z);
-        int m=(z-y)/x;
-        printf("%d\n",m);
-    }
+	// your code goes here
+	int t,m,n,k;
+	scanf("%d",&t);
+	while(t--)
+	{
+	    scanf("%d%d%d",&m,&n,&k);
+	    if((m>(n+k))||(n>(m+k))||(k>(n+m)))
+	    printf("Yes\n");
+	    else
+	    printf("No\n");
+	}
+
 }
 
 
