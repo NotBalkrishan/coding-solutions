@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+	// your code goes here
+	int t,x,y,z;
+	scanf("%d",&t);
+	while(t--)
+	{
+	    scanf("%d%d%d",&x,&y,&z);
+	    if((x>y+z)||(y>x+z)||(z>x+y))
+	    printf("Yes\n");
+	    else
+	    printf("No\n");
+	}
+
+}
+
