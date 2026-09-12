@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+	// your code goes here
+	int t,w,x,y,z;
+	scanf("%d",&t);
+	while(t--)
+	{
+	    scanf("%d%d%d%d",&w,&x,&y,&z);
+	    if((x-w)>(y*z))
+	    printf("Unfilled\n");
+	    else if((x-w)<(y*z))
+	    printf("Overflow\n");
+	    else
+	    printf("Filled\n");
+	}
+}
+
