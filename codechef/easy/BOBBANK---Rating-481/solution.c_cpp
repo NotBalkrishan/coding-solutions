@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+	// your code goes here
+	int t,w,x,y,z;
+	scanf("%d",&t);
+	while(t--)
+	{
+	    scanf("%d%d%d%d",&w,&x,&y,&z);
+	    printf("%d\n",(w+((x-y)*z)));
+	}
+
+}
+
