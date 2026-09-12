@@ -61,7 +61,7 @@ There are $11$ people who want to book a seat. Since we have only $10$ seats, on
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-12T09:08:12.566Z  
+**Submitted:** 2026-09-12T09:08:37.485Z  
 
 ```c_cpp
 #include <stdio.h>
