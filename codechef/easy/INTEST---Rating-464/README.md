@@ -48,7 +48,7 @@ The integers divisible by $3$ are $51, 966369, 9,$ and $999996$. Thus, there are
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-12T08:45:03.824Z  
+**Submitted:** 2026-09-12T08:46:34.188Z  
 
 ```c_cpp
 //We have populated the solutions for the 10 easiest problems for your support.
