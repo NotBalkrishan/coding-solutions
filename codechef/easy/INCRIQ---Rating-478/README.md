@@ -64,7 +64,7 @@ After learning a musical instrument, Chef's final IQ will be $120+7=127$. Since 
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-12T09:10:29.989Z  
+**Submitted:** 2026-09-12T09:10:43.533Z  
 
 ```c_cpp
 #include <stdio.h>
@@ -73,7 +73,7 @@ int main() {
 	// your code goes here
 	int x;
 	scanf("%d",&x);
-	if((x+7)>=170)
+	if((x+7)>170)
 	printf("YEs\n");
 	else
 	printf("No\n");
