@@ -1,13 +1,17 @@
 #include <stdio.h>
 
 int main() {
-    int t,x,y,z;
-    scanf("%d",&t);
-    while(t--)
-    {
-        scanf("%d%d%d",&x,&y,&z);
-        int m=(z-y)/x;
-        printf("%d\n",m);
-    }
+	// your code goes here
+	int t,m,n,k;
+	scanf("%d",&t);
+	while(t--)
+	{
+	    scanf("%d%d%d",&m,&n,&k);
+	    if((m>(n+k))||(n>(m+k))||(k>(n+m)))
+	    printf("Yes\n");
+	    else
+	    printf("No\n");
+	}
+
 }
 
