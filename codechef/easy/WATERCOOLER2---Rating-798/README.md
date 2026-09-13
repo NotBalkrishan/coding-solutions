@@ -51,7 +51,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-13T17:32:12.825Z  
+**Submitted:** 2026-09-13T17:33:04.752Z  
 
 ```c_cpp
 #include <stdio.h>
@@ -67,7 +67,7 @@ int main() {
 	    if(x<y)
 	    printf("%d\n", y/x);
 	    else 
-	    printf("0");
+	    printf("0\n");
 	}
 
 }
