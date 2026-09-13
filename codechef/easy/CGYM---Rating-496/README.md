@@ -54,7 +54,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-13T04:44:50.674Z  
+**Submitted:** 2026-09-13T04:45:36.043Z  
 
 ```c_cpp
 #include <stdio.h>
@@ -68,7 +68,7 @@ int main() {
 	    scanf("%d%d%d",&x,&y,&z);
 	    if(x>z)
 	    printf("0\n");
-	    else if(z>x && z<(x+y))
+	    else if(z>=x && z<(x+y))
 	    printf("1\n");
 	    else
 	    printf("2\n");
