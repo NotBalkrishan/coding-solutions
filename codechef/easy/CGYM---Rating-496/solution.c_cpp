@@ -9,7 +9,7 @@ int main() {
 	    scanf("%d%d%d",&x,&y,&z);
 	    if(x>z)
 	    printf("0\n");
-	    else if(z>x && z<(x+y))
+	    else if(z>=x && z<(x+y))
 	    printf("1\n");
 	    else
 	    printf("2\n");
