@@ -63,21 +63,19 @@ The team has scored $\ge 12$ points. Hence it does qualify.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-02T16:36:13.111Z  
+**Submitted:** 2026-09-13T04:54:56.771Z  
 
 ```c_cpp
 #include <stdio.h>
-
-int main() {
-	// your code goes here
-	int score;
-	
-	score>=12?printf("Yes \n"):printf("No \n");
-	return 0;
-
+int main()
+{
+    int x;
+    scanf("%d",&x);
+    if(x>=12)
+    printf("Yes\n");
+    else
+    printf("no\n");
 }
-
-
 ```
 
 ---
