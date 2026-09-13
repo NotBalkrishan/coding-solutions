@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+	// your code goes here
+	int t,a,b,c;
+	scanf("%d",&t);
+	while(t--)
+	{
+	    scanf("%d%d%d",&a,&b,&c);
+	    if(((a+b)*0.5)>c)
+	    printf("YEs\n");
+	    else
+	    printf("No\n");
+	}
+
+}
+
