@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main() {
+	// your code goes here
+	char chr[10];
+	scanf("%s",&chr);
+	printf("%c",chr[6]);
+
+}
+
