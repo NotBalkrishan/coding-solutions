@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+	// your code goes here
+	
+	int t,x,y,m;
+	scanf("%d",&t);
+	while(t--)
+	{
+	    scanf("%d%d",&x,&y);
+	    if(x<y)
+	    printf("%d\n", y/x);
+	    else 
+	    printf("0");
+	}
+
+}
+
