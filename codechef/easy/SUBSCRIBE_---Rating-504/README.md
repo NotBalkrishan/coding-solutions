@@ -50,7 +50,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-13T17:45:41.351Z  
+**Submitted:** 2026-09-14T08:26:42.068Z  
 
 ```c_cpp
 #include <stdio.h>
@@ -62,12 +62,10 @@ int main() {
 	while(t--)
 	{
 	    scanf("%d%d",&n,&x);
-	    if(1<=n &&n<=6)
-	    printf("%d\n",x);
-	    else if(n>6 && n<=12)
-	    printf("%d\n",x*2);
+	    if(n%6!=0)
+	    printf("%d\n",((n/6)+1)*x);
 	    else
-	    printf("%d\n",x*3);
+	    printf("%d\n",(n/6)*x);
 	}
 }
 
