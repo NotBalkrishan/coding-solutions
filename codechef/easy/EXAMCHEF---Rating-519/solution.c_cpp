@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+	// your code goes here
+	int t,x,y,z;
+	scanf("%d",&t);
+	for(int i=1;i<=t;i++)
+	{
+	    scanf("%d%d%d",&x,&y,&z);
+	    int m=z*100/(x*y);
+	    if(m>50)
+	    printf("Yes\n");
+	    else
+	    printf("No\n");
+	}
+
+}
+
