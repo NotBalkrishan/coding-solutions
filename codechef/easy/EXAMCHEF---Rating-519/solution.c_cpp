@@ -7,8 +7,8 @@ int main() {
 	for(int i=1;i<=t;i++)
 	{
 	    scanf("%d%d%d",&x,&y,&z);
-	    int m=z*100/(x*y);
-	    if(m>50)
+	    float m=z*100/(x*y);
+	    if(m>50.0)
 	    printf("Yes\n");
 	    else
 	    printf("No\n");
