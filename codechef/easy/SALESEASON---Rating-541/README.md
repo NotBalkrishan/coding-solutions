@@ -57,7 +57,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-15T11:45:32.065Z  
+**Submitted:** 2026-09-15T11:45:41.494Z  
 
 ```c_cpp
 #include <stdio.h>
@@ -73,7 +73,7 @@ int main() {
 	    printf("%d\n",x);
 	    else if(x>100 && x<=1000)
 	    printf("%d\n", x-25);
-	    else if(x>1000 && x>=5000)
+	    else if(x>1000 && x<=5000)
 	    printf("%d\n", x-100);
 	    else
 	    printf("%d\n", x-500);
