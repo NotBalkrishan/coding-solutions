@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main()
+{
+    int s,w;
+    int count=0;
+    int count1=0;
+    scanf("%d",&s);
+    for(int i=1;i<=s;i++)
+    {
+        scanf("%d",&w);
+        if(w%2==0)
+        count++;
+        else
+        count1++;
+    }
+    if(count>count1)
+    printf("READY FOR BATTLE\n");
+    else
+    printf("NOT READY\n");
+}
