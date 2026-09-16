@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main()
+{
+    int t,n;
+    float z;
+    scanf("%d",&t);
+    while(t--)
+    {
+        scanf("%d",&n);
+        z=(n*50)*0.30;
+        printf("%.0f\n", z);
+    }
+}
+	    
