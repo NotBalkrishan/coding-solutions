@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main() {
+    // your code goes here
+    int t, n, x, y = 0;
+    scanf("%d", & t);
+    while (t--)
+    {
+        scanf("%d", & n);
+        int count = 0;
+        for (int i = 1; i <= n; i++)
+        {
+            
+            scanf("%d", & x);
+            if (x >= 1000)
+            {
+                count++;
+                y = count;
+            }
+
+            else
+            {y = count;
+                continue;}
+
+
+        }
+        printf("%d\n", y);
+
+    }
+
+}
