@@ -56,7 +56,7 @@ POSSIBLE
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-17T13:28:25.398Z  
+**Submitted:** 2026-09-17T13:28:50.012Z  
 
 ```c_cpp
 #include <stdio.h>
@@ -65,9 +65,10 @@ int main() {
 	// your code goes here
 	int t,a,b,c,d;
 	scanf("%d",&t);
-	scanf("%d%d",&a,&b);
+	
 	while(t--)
 	{
+	    scanf("%d%d",&a,&b);
 	    scanf("%d%d",&c,&d);
 	    if(c>=a && d>=b)
 	    printf("POSSIBLE\n");
