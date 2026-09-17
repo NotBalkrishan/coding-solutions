@@ -58,22 +58,22 @@ Qualify
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-17T17:16:21.119Z  
+**Submitted:** 2026-09-17T17:19:08.219Z  
 
 ```c_cpp
 #include <stdio.h>
 
 int main() {
 	// your code goes here
-	int t,n;
+	int t,a,b,x;
 	scanf("%d",&t);
-	for(int i=1;i<=t;i++)
+	while(t--)
 	{
-	    scanf("%d",&n);
-	    if(n%4==0)
-	    printf("Good\n");
+	    scanf("%d%d%d",&x,&a,&b);
+	    if(((a*1)+(b*2))>=x)
+	    printf("qualify\n");
 	    else
-	    printf("NOT GOOD\n");
+	    printf("notqualify\n");
 	}
 
 }
