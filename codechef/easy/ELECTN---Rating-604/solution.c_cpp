@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+    // your code goes here
+    int t, n, x, y;
+    scanf("%d", & t);
+    while(t--)
+    {
+        scanf("%d%d", & n, & x);
+        int count = 0;
+        for (int i = 1; i <= n; i++)
+        {
+            scanf("%d", & y);
+            if (y >= x)
+            {
+                count++;
+            }
+            else
+            continue;
+            
+            
+        }
+        printf("%d\n",count);
+        
+    }
+
+}
