@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+	// your code goes here
+	int t,n;
+	scanf("%d",&t);
+	for(int i=1;i<=t;i++)
+	{
+	    scanf("%d",&n);
+	    if(n%4==0)
+	    printf("Good\n");
+	    else
+	    printf("NOT GOOD\n");
+	}
+
+}
+
