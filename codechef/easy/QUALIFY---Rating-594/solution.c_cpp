@@ -2,15 +2,15 @@
 
 int main() {
 	// your code goes here
-	int t,n;
+	int t,a,b,x;
 	scanf("%d",&t);
-	for(int i=1;i<=t;i++)
+	while(t--)
 	{
-	    scanf("%d",&n);
-	    if(n%4==0)
-	    printf("Good\n");
+	    scanf("%d%d%d",&x,&a,&b);
+	    if(((a*1)+(b*2))>=x)
+	    printf("qualify\n");
 	    else
-	    printf("NOT GOOD\n");
+	    printf("notqualify\n");
 	}
 
 }
