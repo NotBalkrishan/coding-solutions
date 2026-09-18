@@ -11,7 +11,8 @@ int main() {
 	    {
 	        if(x%n==0)
 	        printf("Yes\n");
-	        
+	        else
+	        printf("No\n");
 	    }
 	    
 	    else
