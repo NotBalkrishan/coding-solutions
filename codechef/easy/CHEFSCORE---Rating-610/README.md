@@ -65,41 +65,41 @@ NO
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-18T01:46:14.778Z  
+**Submitted:** 2026-09-18T01:48:34.923Z  
 
 ```c_cpp
 #include <stdio.h>
 
 int main() {
-	// your code goes here
-	int t,n,x,y;
-	scanf("%d",&t);
-	while(t--)
-	{
-	    scanf("%d%d%d",&n,&x,&y);
-	    if(y>=0)
-	    {
-	        if(y%x==0)
-	    printf("Yes\n");
-	    else
-	    printf("No\n");
-	    }
-	    else
-	    continue;
-	    
-	    if(y>(x*n))
-	    printf("no\n");
-	    
-	    else
-	    continue;
-	    
-	    
-	    
-	}
+    // your code goes here
+    int t, n, x, y;
+    scanf("%d", & t);
+    while (t--)
+    {
+        scanf("%d%d%d", & n, & x, & y);
+        if (y >= 0)
+        {
+            if (y > (x * n))
+            {
+                printf("no\n");
+                continue;
+            }
+            else if (y % x == 0)
+                printf("Yes\n");
+
+
+            else
+                printf("No\n");
+        }
+        else
+            continue;
+
+
+
+
+    }
 
 }
-
-
 ```
 
 ---
