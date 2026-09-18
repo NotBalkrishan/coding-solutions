@@ -61,7 +61,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-18T11:24:40.198Z  
+**Submitted:** 2026-09-18T11:32:25.314Z  
 
 ```c_cpp
 #include <stdio.h>
@@ -74,11 +74,23 @@ int main() {
 	{
 	    scanf("%d%d",&n,&x);
 	    if(n<x)
-	    printf("%d\n",n);
+	    {
+	        if((x-n)<n)
+	        printf("%d\n", x-n);
+	        else 
+	        printf("%d\n",n);
+	    }
+	    
 	    else if(n==x)
 	    printf("0\n");
 	    else
-	    printf("%d\n",x);
+	    {
+	        if((n-x)<x)
+	        printf("%d\n", n-x);
+	        else
+	        printf("%d\n",x);
+	    }
+	    
 	}
 
 }
