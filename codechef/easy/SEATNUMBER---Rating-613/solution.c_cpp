@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+	// your code goes here
+	int t,n;
+	scanf("%d",&t);
+	while(t--)
+	{
+	    scanf("%d",&n);
+	    if(1<=n && n<=10)
+	    printf("Lower double\n");
+	    
+	    else if(11<=n && n<=15)
+	    printf("Lower Single\n");
+	    
+	    else if(16<=n && n<=25)
+	    printf("Upper double\n");
+	    
+	    else 
+	    printf("Upper Single\n");
+	    
+	}
+
+}
+
