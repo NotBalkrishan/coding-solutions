@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+	// your code goes here
+	int t,n,x;
+	scanf("%d",&t);
+	while(t--)
+	{
+	    scanf("%d%d",&n,&x);
+	    if(n<x)
+	    printf("%d\n",n);
+	    else if(n==x)
+	    printf("0\n");
+	    else
+	    printf("%d\n",x);
+	}
+
+}
+
