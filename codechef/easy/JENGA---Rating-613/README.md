@@ -60,7 +60,7 @@ YES
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-18T11:05:40.740Z  
+**Submitted:** 2026-09-18T11:06:13.970Z  
 
 ```c_cpp
 #include <stdio.h>
@@ -76,7 +76,8 @@ int main() {
 	    {
 	        if(x%n==0)
 	        printf("Yes\n");
-	        
+	        else
+	        printf("No\n");
 	    }
 	    
 	    else
