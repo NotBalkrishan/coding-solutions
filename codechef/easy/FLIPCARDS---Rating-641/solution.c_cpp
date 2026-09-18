@@ -8,11 +8,23 @@ int main() {
 	{
 	    scanf("%d%d",&n,&x);
 	    if(n<x)
-	    printf("%d\n",n);
+	    {
+	        if((x-n)<n)
+	        printf("%d\n", x-n);
+	        else 
+	        printf("%d\n",n);
+	    }
+	    
 	    else if(n==x)
 	    printf("0\n");
 	    else
-	    printf("%d\n",x);
+	    {
+	        if((n-x)<x)
+	        printf("%d\n", n-x);
+	        else
+	        printf("%d\n",x);
+	    }
+	    
 	}
 
 }
