@@ -65,7 +65,7 @@ NO
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-18T01:43:38.813Z  
+**Submitted:** 2026-09-18T01:46:14.778Z  
 
 ```c_cpp
 #include <stdio.h>
@@ -77,10 +77,23 @@ int main() {
 	while(t--)
 	{
 	    scanf("%d%d%d",&n,&x,&y);
-	    if(y%x==0)
+	    if(y>=0)
+	    {
+	        if(y%x==0)
 	    printf("Yes\n");
 	    else
 	    printf("No\n");
+	    }
+	    else
+	    continue;
+	    
+	    if(y>(x*n))
+	    printf("no\n");
+	    
+	    else
+	    continue;
+	    
+	    
 	    
 	}
 
