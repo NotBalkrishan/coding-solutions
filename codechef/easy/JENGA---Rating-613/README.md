@@ -60,7 +60,7 @@ YES
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-18T11:04:16.112Z  
+**Submitted:** 2026-09-18T11:05:40.740Z  
 
 ```c_cpp
 #include <stdio.h>
@@ -73,7 +73,12 @@ int main() {
 	{
 	    scanf("%d%d",&n,&x);
 	    if(x>=n)
-	    printf("Yes\n");
+	    {
+	        if(x%n==0)
+	        printf("Yes\n");
+	        
+	    }
+	    
 	    else
 	    printf("No\n");
 	}
