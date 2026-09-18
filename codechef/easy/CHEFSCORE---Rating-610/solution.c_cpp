@@ -7,10 +7,23 @@ int main() {
 	while(t--)
 	{
 	    scanf("%d%d%d",&n,&x,&y);
-	    if(y%x==0)
+	    if(y>=0)
+	    {
+	        if(y%x==0)
 	    printf("Yes\n");
 	    else
 	    printf("No\n");
+	    }
+	    else
+	    continue;
+	    
+	    if(y>(x*n))
+	    printf("no\n");
+	    
+	    else
+	    continue;
+	    
+	    
 	    
 	}
 
