@@ -8,7 +8,12 @@ int main() {
 	{
 	    scanf("%d%d",&n,&x);
 	    if(x>=n)
-	    printf("Yes\n");
+	    {
+	        if(x%n==0)
+	        printf("Yes\n");
+	        
+	    }
+	    
 	    else
 	    printf("No\n");
 	}
