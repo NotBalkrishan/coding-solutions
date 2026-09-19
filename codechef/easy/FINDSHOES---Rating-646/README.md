@@ -57,7 +57,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-19T05:52:23.410Z  
+**Submitted:** 2026-09-19T06:03:25.175Z  
 
 ```c_cpp
 #include <stdio.h>
@@ -74,7 +74,7 @@ int main() {
 	    else if(m==0)
 	    printf("%d\n", n*2);
 	    else
-	    printf("%d\n",((n-m)*2)+m);
+	    printf("%d\n",(n-m)+n);
 	    
 	}
 
