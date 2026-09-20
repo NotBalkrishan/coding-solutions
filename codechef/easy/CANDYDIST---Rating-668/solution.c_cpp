@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    int t, n, m;
+    scanf("%d", & t);
+    while (t--)
+    {
+        scanf("%d%d", & n, & m);
+        if (n % m == 0)
+        {
+            int z = n / m;
+            if (z % 2 == 0)
+                printf("Yes\n");
+
+            else
+                printf("No\n");
+        }
+
+        else
+            printf("No\n");
+    }
+
+}
