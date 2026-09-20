@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+int main() {
+    // your code goes here
+    int t, n;
+    
+    scanf("%d",&t);
+    while (t>0)
+    {
+        scanf("%d",&n);
+        char s[n];
+        for(int i=0;i<n;i++)
+        {
+            scanf(" %c ", &s[i]);
+            
+            if(s[i]=='A')
+            {s[i]='T';}
+            
+            else if(s[i]=='T')
+            {s[i]='A';}
+            
+            else if(s[i]=='C')
+            {s[i]='G';}
+            
+            else if(s[i]=='G')
+            {s[i]='C';}
+            
+            printf("%c",s[i]);
+            
+            
+
+        }
+        printf("\n");
+        t--;
+    }
+}
