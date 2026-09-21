@@ -1,0 +1,47 @@
+#include <stdio.h>
+
+int main() {
+	// your code goes here
+	int t,x,y,n,m;
+	scanf("%d",&t);
+	for(int i=1;i<=t;i++)
+	{
+	    scanf("%d%d%d%d",&x,&y,&n,&m);
+	    if((x-n)>=(n-x))
+	    {
+	        if((m-y)>=(y-m))
+	        {
+	            if((m-y)>=(x-n))
+	            printf("%d\n", (m-y));
+	            else
+	            printf("%d\n", (x-n));
+	        }
+	        else
+	        {
+	            if((y-m)>=(x-n))
+	            printf("%d\n", (y-m));
+	            else
+	            printf("%d\n", (x-n));
+	        }
+	    }
+	    else
+	    {
+	        if((m-y)>=(y-m))
+	        {
+	            if((m-y)>=(n-x))
+	            printf("%d\n", (m-y));
+	            else
+	            printf("%d\n", (n-x));
+	        }
+	        else
+	        {
+	            if((y-m)>=(n-x))
+	            printf("%d\n", (y-m));
+	            else
+	            printf("%d\n", (n-x));
+	        }
+	    }
+	}
+
+}
+
