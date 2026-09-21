@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+	// your code goes here
+	int t,x,y;
+	scanf("%d",&t);
+	for(int i=1;i<=t;i++)
+	{
+	    scanf("%d%d",&x,&y);
+	    int z=x/y;
+	    
+	    if(x%y==0)
+	    printf("%d\n", z);
+	    else
+	    printf("%d\n", z+(x-(y*z)));
+	}
+
+}
+
