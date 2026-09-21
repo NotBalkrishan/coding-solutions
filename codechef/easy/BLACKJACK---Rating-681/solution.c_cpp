@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+	// your code goes here
+	int t,a,b;
+	scanf("%d",&t);
+	while(t--)
+	{
+	    scanf("%d%d",&a,&b);
+	    if((a+b)<11)
+	    printf("-1\n");
+	    
+	    else
+	    printf("%d\n", 21-(a+b));
+	}
+
+}
+
