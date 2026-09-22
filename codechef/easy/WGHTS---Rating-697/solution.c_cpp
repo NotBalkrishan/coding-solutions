@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main() {
+	// your code goes here
+	int t,w,x,y,z;
+	scanf("%d",&t);
+	while(t--)
+	{
+	    scanf("%d%d%d%d",&w,&x,&y,&z);
+	    if(w==x)
+	    printf("Yes\n");
+	    else if(w==y)
+	    printf("Yes\n");
+	    else if(w==z)
+	    printf("Yes\n");
+	    else if(w==(x+y))
+	    printf("Yes\n");
+	    else if(w==(x+z))
+	    printf("Yes\n");
+	    else if(w==(y+z))
+	    printf("Yes\n");
+	    else if(w==(x+y+z))
+	    printf("Yes\n");
+	    else
+	    printf("No\n");
+	}
+
+}
+
