@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+	// your code goes here
+	int t,x,n;
+	scanf("%d",&t);
+	while(t--)
+	{
+	    scanf("%d%d",&x,&n);
+	    if(n>x*100)
+	    {
+	        if(n%100==0)
+	        printf("%d\n",(n/100)-x);
+	        else
+	        printf("%d\n",((n/100)+1)-x);
+	    }
+	    else
+	    printf("0\n");
+	}
+
+}
+
