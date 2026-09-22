@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+	// your code goes here
+	int t,x;
+	scanf("%d",&t);
+	while(t--)
+	{
+	    scanf("%d",&x);
+	    int z=x/10;
+	    if(x%5==0)
+	    {
+	        if(x%10==0)
+	        printf("%d\n",(x/10));
+	        else
+	        {
+	            x=x%10;
+	            printf("%d\n",(x/5)+z);
+	        }
+	    }
+	    else
+	    printf("-1\n");
+	}
+
+}
+
