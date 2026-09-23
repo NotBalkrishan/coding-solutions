@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+	// your code goes here
+	int t,n,a;
+	scanf("%d",&t);
+	while(t--)
+	{
+        scanf("%d",&n);
+        int count=0;
+        for(int i=1;i<=n;i++)
+        {
+           scanf("%d",&a);
+           if(a>=10 && a<=60)
+           count++;
+           
+        }
+        printf("%d\n", count++);
+	}
+}
+
