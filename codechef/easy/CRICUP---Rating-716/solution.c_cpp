@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+	// your code goes here
+	int t,x,y,d;
+	scanf("%d",&t);
+	while(t--)
+	{
+	    scanf("%d%d%d",&x,&y,&d);
+	    if(x>=y)
+	    {
+	        if((x-y)<=d)
+	        printf("YEs\n");
+	        else
+	        printf("No\n");
+	    }
+	    else
+	    {
+	        if((y-x)<=d)
+	        printf("Yes\n");
+	        else
+	        printf("No\n");
+	    }
+	}
+
+}
+
