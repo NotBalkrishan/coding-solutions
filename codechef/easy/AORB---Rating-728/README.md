@@ -90,7 +90,7 @@ So, Chef will attempt in the order $B \rightarrow A$ and thus obtain $1400$ poin
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-24T16:42:54.682Z  
+**Submitted:** 2026-09-24T16:40:25.747Z  
 
 ```c_cpp
 #include <stdio.h>
@@ -102,14 +102,10 @@ int main() {
 	while(n--)
 	{
 	    scanf("%d%d",&x,&y);
-	    int a1=x*2;
-	    int a2=(x+y)*2;
-	    int a3=y*4;
-	    int a4=(x+y)*4;
-	    if((a1+a4)>(a2+a3))
-	    printf("%d\n", 1500-a2-a3);
+	    if(y>x)
+	    printf("%d\n",1500-(x*2)-((x+y)*4));
 	    else
-	    printf("%d\n",1500-a1-a4);
+	    printf("%d\n", 1500-(y*4)-((x+y)*2));
 	    
 	}
 
