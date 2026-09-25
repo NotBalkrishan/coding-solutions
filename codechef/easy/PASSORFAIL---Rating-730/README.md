@@ -58,14 +58,27 @@ FAIL
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-25T02:54:13.712Z  
+**Submitted:** 2026-09-25T02:56:09.281Z  
 
 ```c_cpp
 #include <stdio.h>
 
 int main() {
 	// your code goes here
-	int t,n,
+	int t,n,x,p;
+	scanf("%d",&t);
+	while(t--)
+	{
+	    scanf("%d%d%d",&n,&x,&p);
+	    int z=(x*3)-(n-x);
+	    if(z>=p)
+	    printf("pass\n");
+	    else 
+	    printf("Fail\n");
+	}
+
+}
+
 
 ```
 
