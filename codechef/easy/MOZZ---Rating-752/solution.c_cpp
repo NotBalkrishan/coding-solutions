@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+	// your code goes here
+	int t,x,y,r;
+	scanf("%d",&t);
+	while(t--)
+	{
+	    scanf("%d%d%d",&x,&y,&r);
+	    int z=r/30;
+	    if((z+x)%y==0)
+	    printf("%d\n",(z+x)/y);
+	    else
+	    printf("%d\n",((z+x)/y)+1);
+	}
+
+}
+
