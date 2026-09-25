@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main() {
+	// your code goes here
+	int t,a,b,k;
+	scanf("%d",&t);
+	while(t--)
+	{
+	    scanf("%d%d%d",&a,&b,&k);
+	    if(a>b)
+	    {
+	        int z=a-b;
+	        if(z%k==0)
+	        printf("%d\n",z/k);
+	        else
+	        printf("%d\n",(z/k)+1);
+	    }
+	    else
+	    {
+	        int z=b-a;
+	        if(z%k==0)
+	        printf("%d\n",z/k);
+	        else
+	        printf("%d\n",(z/k)+1);
+	    }
+	}
+
+}
+
