@@ -54,24 +54,29 @@ After transmogrification, the characteristic values become {12,14,11,45,11}, out
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-25T18:42:07.432Z  
+**Submitted:** 2026-09-25T21:56:42.168Z  
 
 ```c_cpp
 #include <stdio.h>
 
 int main() {
 	// your code goes here
-	int t,a,b;
+	int t,n,k,x;
 	scanf("%d",&t);
 	while(t--)
 	{
-	    scanf("%d%d",&a,&b);
-	    if(a>b)
-	    printf(">\n");
-	    else if(a<b)
-	    printf("<\n");
-	    else
-	    printf("=\n");
+	    int count=0;
+	    scanf("%d%d",&n,&k);
+	    for(int i=1;i<=n;i++)
+	    {
+	        scanf("%d",&x);
+	        if((k+x)%7==0)
+	        {
+	            count++;
+	        }
+	        
+	    }
+	    printf("%d\n",count);
 	}
 
 }
