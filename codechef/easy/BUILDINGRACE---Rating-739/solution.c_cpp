@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+	// your code goes here
+	int t;
+	float a,b,x,y;
+	scanf("%d",&t);
+	while(t--)
+	{
+	    scanf("%f%f%f%f",&a,&b,&x,&y);
+	    float p=a/x;
+	    float q=b/y;
+	    if(p>q)
+	    printf("Chefina\n");
+	    else if(q>p)
+	    printf("Chef\n");
+	    else
+	    printf("Both\n");
+	    
+	}
+
+}
+
