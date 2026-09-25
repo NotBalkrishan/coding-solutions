@@ -50,7 +50,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-25T03:03:56.730Z  
+**Submitted:** 2026-09-25T03:05:08.476Z  
 
 ```c_cpp
 #include <stdio.h>
@@ -62,12 +62,7 @@ int main() {
 	while(t--)
 	{
 	    scanf("%d",&n);
-	    int fact=1;
-	    for(int i=1;i<=n;i++)
-	    {
-	        fact=fact*i;
-	    }
-	    printf("%d\n",fact);
+	    printf("%d\n",n*(n-1));
 	}
 
 }
