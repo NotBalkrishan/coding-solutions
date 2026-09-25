@@ -2,22 +2,27 @@
 
 int main() {
 	// your code goes here
-	int t,n,k,x;
+	int t,a,b,k;
 	scanf("%d",&t);
 	while(t--)
 	{
-	    int count=0;
-	    scanf("%d%d",&n,&k);
-	    for(int i=1;i<=n;i++)
+	    scanf("%d%d%d",&a,&b,&k);
+	    if(a>b)
 	    {
-	        scanf("%d",&x);
-	        if((k+x)%7==0)
-	        {
-	            count++;
-	        }
-	        
+	        int z=a-b;
+	        if(z%k==0)
+	        printf("%d\n",z/k);
+	        else
+	        printf("%d\n",(z/k)+1);
 	    }
-	    printf("%d\n",count);
+	    else
+	    {
+	        int z=b-a;
+	        if(z%k==0)
+	        printf("%d\n",z/k);
+	        else
+	        printf("%d\n",(z/k)+1);
+	    }
 	}
 
 }
