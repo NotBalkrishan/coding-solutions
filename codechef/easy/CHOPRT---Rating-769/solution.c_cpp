@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+	// your code goes here
+	int r,o,c;
+	scanf("%d%d%d",&r,&o,&c);
+	int x=20-o;
+	int z=r-c;
+	if((x*6*6)>z)
+	printf("Yes\n");
+	else
+	printf("no\n");
+}
+
