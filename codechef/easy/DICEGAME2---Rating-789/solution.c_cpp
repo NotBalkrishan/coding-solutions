@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include<math.h>
+int main() {
+	// your code goes here
+    int t;
+    float a1,a2,a3,b1,b2,b3;
+    scanf("%d",&t);
+    while(t--)
+    {
+        scanf("%f%f%f%f%f%f",&a1,&a2,&a3,&b1,&b2,&b3);
+        int x=(a1+a2+a3)- fmin(a1,fmin(a2,a3));
+        int y=(b1+b2+b3)- fmin(b1,fmin(b2,b3));
+        if(x>y)
+        printf("Alice\n");
+        else if(y>x)
+        printf("Bob\n");
+        else
+        printf("Tie\n");
+    }
+}
+
