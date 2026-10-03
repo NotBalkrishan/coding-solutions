@@ -65,7 +65,7 @@ Thus, number of students who passed are $50\%$, which is equal to $50\%$.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-14T08:37:21.141Z  
+**Submitted:** 2026-10-03T09:51:53.937Z  
 
 ```c_cpp
 #include <stdio.h>
