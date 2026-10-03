@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+	// your code goes here
+	int t;
+	float x,y,z;
+	scanf("%d",&t);
+	while(t--)
+	{
+	    scanf("%f%f%f",&x,&y,&z);
+	    float m=(z*100)/(x*y);
+	    if(m>50)
+	    printf("yes\n");
+	    else
+	    printf("No\n");
+	}
+
+}
+
