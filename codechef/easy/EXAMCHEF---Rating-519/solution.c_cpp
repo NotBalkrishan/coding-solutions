@@ -2,11 +2,12 @@
 
 int main() {
 	// your code goes here
-	int t,x,y,z;
+	int t;
+	float x,y,z;
 	scanf("%d",&t);
 	while(t--)
 	{
-	    scanf("%d%d%d",&x,&y,&z);
+	    scanf("%f%f%f",&x,&y,&z);
 	    float m=(z*100)/(x*y);
 	    if(m>50)
 	    printf("yes\n");
