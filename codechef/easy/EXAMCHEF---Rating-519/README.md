@@ -65,19 +65,18 @@ Thus, number of students who passed are $50\%$, which is equal to $50\%$.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-03T10:00:01.409Z  
+**Submitted:** 2026-10-03T09:58:43.875Z  
 
 ```c_cpp
 #include <stdio.h>
 
 int main() {
 	// your code goes here
-	int t;
-	float x,y,z;
+	int t,x,y,z;
 	scanf("%d",&t);
 	while(t--)
 	{
-	    scanf("%f%f%f",&x,&y,&z);
+	    scanf("%d%d%d",&x,&y,&z);
 	    float m=(z*100)/(x*y);
 	    if(m>50)
 	    printf("yes\n");
