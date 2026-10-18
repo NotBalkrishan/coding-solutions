@@ -43,30 +43,34 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-25T16:09:12.617Z  
+**Submitted:** 2026-10-18T07:37:05.782Z  
 
 ```c_cpp
 #include <stdio.h>
 
-int main() {
-	// your code goes here
-	int t,n;
-	scanf("%d",&t);
-	while(t--)
-	{
-	    int fact=1;
-	    scanf("%d",&n);
-	    for(int i=1;i<=n;i++)
-	    {
-	        fact=fact*i;
-	    }
-	    
-	    printf("%d\n", fact);
-	}
+int main()
+{
+    int t, n, i, j;
+    unsigned long long fact;
 
+    scanf("%d", &t);
+
+    for (i = 0; i < t; i++)
+    {
+        scanf("%d", &n);
+
+        fact = 1;
+
+        for (j = 1; j <= n; j++)
+        {
+            fact = fact * j;
+        }
+
+        printf("%llu\n", fact);
+    }
+
+    return 0;
 }
-
-
 ```
 
 ---
