@@ -1,21 +1,28 @@
 #include <stdio.h>
 
 int main() {
-	// your code goes here
-	int t,n,s;
-	scanf("%d",&t);
-	while(t--)
-	{
-	    scanf("%d%d",&n,&s);
-	    if(s<0 || s>n*4)
-	    printf("-1\n");
-	    else if(s%4==0)
-	    printf("%d\n",s/4);
-	    else
-	    {
-	        
-	    }
-	}
+    // your code goes here
+    int t, n, s;
+    scanf("%d", & t);
+    while (t--)
+    {
+        scanf("%d%d", & n, & s);
+        if (s < 0 || s > n * 4)
+            printf("-1\n");
+        else if (s % 4 == 0)
+            printf("%d\n", s / 4);
+        else
+        {
+            int x=(s/4)+1;
+            int y=(x*4)-s;
+            if (y <= x && x + y <= n)
+            {
+                printf("%d\n",x+y);
+            }
+             else
+             printf("-1\n");
+        }
+        
+    }
 
 }
-
