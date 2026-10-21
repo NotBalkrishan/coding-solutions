@@ -1,0 +1,9 @@
+#include <stdio.h>
+int main() {
+	// your code goes here
+	int x,y;
+	scanf("%d",&x,&y);
+	printf("%d\n",y-x-1);
+
+}
+
