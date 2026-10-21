@@ -60,16 +60,16 @@ Your rival team is $1$st, and you are $2$nd, no teams between you.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-21T15:20:48.968Z  
+**Submitted:** 2026-10-21T15:21:29.462Z  
 
 ```c_cpp
 #include <stdio.h>
+
 int main() {
 	// your code goes here
-	int x,y;
-	scanf("%d",&x,&y);
-	printf("%d\n",y-x-1);
-
+    int x,y;
+    scanf("%d%d",&x,&y);
+    printf("%d\n",y-x-1);
 }
 
 
