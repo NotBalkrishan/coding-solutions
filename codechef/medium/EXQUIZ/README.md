@@ -57,31 +57,37 @@ Test case $4$: Since the final score is $0$, all questions can be skipped.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-21T15:25:00.847Z  
+**Submitted:** 2026-10-21T15:32:29.329Z  
 
 ```c_cpp
 #include <stdio.h>
 
 int main() {
-	// your code goes here
-	int t,n,s;
-	scanf("%d",&t);
-	while(t--)
-	{
-	    scanf("%d%d",&n,&s);
-	    if(s<0 || s>n*4)
-	    printf("-1\n");
-	    else if(s%4==0)
-	    printf("%d\n",s/4);
-	    else
-	    {
-	        
-	    }
-	}
+    // your code goes here
+    int t, n, s;
+    scanf("%d", & t);
+    while (t--)
+    {
+        scanf("%d%d", & n, & s);
+        if (s < 0 || s > n * 4)
+            printf("-1\n");
+        else if (s % 4 == 0)
+            printf("%d\n", s / 4);
+        else
+        {
+            int x=(s/4)+1;
+            int y=(x*4)-s;
+            if (y <= x && x + y <= n)
+            {
+                printf("%d\n",x+y);
+            }
+             else
+             printf("-1\n");
+        }
+        
+    }
 
 }
-
-
 ```
 
 ---
