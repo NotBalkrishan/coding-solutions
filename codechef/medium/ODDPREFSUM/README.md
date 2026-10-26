@@ -58,7 +58,7 @@ Yes
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-26T08:26:30.697Z  
+**Submitted:** 2026-10-26T08:27:42.082Z  
 
 ```c_cpp
 #include <stdio.h>
@@ -71,13 +71,17 @@ int main() {
 	{
 	    scanf("%d",&n);
 	    int a['n'];
-	    int sum=0;
+	    int sum=0,flag=0;
 	    for(int i=0;i<n;i++)
 	    {
 	        sum=sum+a[i];
+	        if(sum%2!=0)
+	        flag=1;
+	        else
+	        flag=0;
 	    }
 	    
-	    if(sum%2!=0)
+	    if(flag==0)
 	    printf("no\n");
 	    else
 	    printf("yes\n");
