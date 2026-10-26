@@ -58,7 +58,7 @@ Yes
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-26T08:27:42.082Z  
+**Submitted:** 2026-10-26T08:30:26.168Z  
 
 ```c_cpp
 #include <stdio.h>
@@ -70,7 +70,11 @@ int main() {
 	while(t--)
 	{
 	    scanf("%d",&n);
-	    int a['n'];
+	    int a[n];
+	    for(int i=0;i<n;i++)
+	    {
+	        scanf("%d",&a[i]);
+	    }
 	    int sum=0,flag=0;
 	    for(int i=0;i<n;i++)
 	    {
@@ -81,10 +85,10 @@ int main() {
 	        flag=0;
 	    }
 	    
-	    if(flag==0)
-	    printf("no\n");
+	    if(flag==1)
+	    printf("Yes\n");
 	    else
-	    printf("yes\n");
+	    printf("No\n");
 	}
 
 }
