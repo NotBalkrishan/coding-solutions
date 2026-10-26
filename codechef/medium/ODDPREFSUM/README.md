@@ -58,41 +58,44 @@ Yes
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-26T08:30:26.168Z  
+**Submitted:** 2026-10-26T08:40:38.001Z  
 
 ```c_cpp
+
 #include <stdio.h>
 
 int main() {
-	// your code goes here
-	int t,n;
-	scanf("%d",&t);
-	while(t--)
-	{
-	    scanf("%d",&n);
-	    int a[n];
-	    for(int i=0;i<n;i++)
-	    {
-	        scanf("%d",&a[i]);
-	    }
-	    int sum=0,flag=0;
-	    for(int i=0;i<n;i++)
-	    {
-	        sum=sum+a[i];
-	        if(sum%2!=0)
-	        flag=1;
-	        else
-	        flag=0;
-	    }
-	    
-	    if(flag==1)
-	    printf("Yes\n");
-	    else
-	    printf("No\n");
-	}
+    int t, n;
+    scanf("%d", &t);
 
+    while (t--) {
+        scanf("%d", &n);
+
+        int a[n];
+
+        for (int i = 0; i < n; i++) {
+            scanf("%d", &a[i]);
+        }
+
+        int sum = 0, flag = 0;
+
+        for (int i = 0; i < n; i++) {
+            sum += a[i];
+
+            if (sum % 2 != 0) {
+                flag = 1;
+                break;
+            }
+        }
+
+        if (flag == 1)
+            printf("Yes\n");
+        else
+            printf("No\n");
+    }
+
+    return 0;
 }
-
 
 ```
 
