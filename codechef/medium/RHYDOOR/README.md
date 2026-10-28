@@ -66,36 +66,41 @@ BBBBAAAAABBBBBBB
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-28T14:47:17.985Z  
+**Submitted:** 2026-10-28T15:05:52.643Z  
 
 ```c_cpp
+
 #include <stdio.h>
 
 int main() {
-	// your code goes here
-	int t,n;
-	scanf("%d",&t);
-	while(t--)
-	{
-	    scanf("%d",&n);
-	    char a[n];
-	    for(int i=0;i<n;i++)
-	    {
-	        scanf("%c",&a[i]);
-	    }
-	    int count=0;
-	    for(int i=0;i<n;i++)
-	    {
-	        if((a[i]==a[i+1])&&(a[i+1]==a[i+2]))
-	        count++;
-	        else
-	        continue;
-	    }
-	    printf("%d\n",count);
-	}
+    int t, n;
+    scanf("%d", &t);
 
+    while (t--) {
+        scanf("%d", &n);
+
+        char a[n + 1];
+        scanf("%s", a);
+
+        int count = 0;
+        int i = 0;
+
+        while (i < n) {
+            if (i + 2 < n &&
+                a[i] == a[i + 1] &&
+                a[i + 1] == a[i + 2]) {
+                count++;
+                i += 3;
+            } else {
+                i++;
+            }
+        }
+
+        printf("%d\n", count);
+    }
+
+    return 0;
 }
-
 
 ```
 
