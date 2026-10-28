@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+	// your code goes here
+	int t,n;
+	scanf("%d",&t);
+	while(t--)
+	{
+	    scanf("%d",&n);
+	    char a[n];
+	    for(int i=0;i<n;i++)
+	    {
+	        scanf("%c",&a[i]);
+	    }
+	    int count=0;
+	    for(int i=0;i<n;i++)
+	    {
+	        if((a[i]==a[i+1])&&(a[i+1]==a[i+2]))
+	        count++;
+	        else
+	        continue;
+	    }
+	    printf("%d\n",count);
+	}
+
+}
+
